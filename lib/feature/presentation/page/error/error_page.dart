@@ -5,6 +5,7 @@ import 'error_body.dart';
 
 class ErrorPage extends StatelessWidget {
   static const String route = "error_page";
+
   const ErrorPage({Key? key}) : super(key: key);
 
   @override

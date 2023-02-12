@@ -8,7 +8,7 @@ class Widgets {
   }) {
     return GestureDetector(
       onTap:
-      onPressed ?? (context != null ? () => Navigator.pop(context) : null),
+          onPressed ?? (context != null ? () => Navigator.pop(context) : null),
       child: icon ?? const Icon(Icons.arrow_back),
     );
   }

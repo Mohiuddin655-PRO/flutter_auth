@@ -1,6 +1,6 @@
-import 'package:flutter_auth/core/common/responses/response.dart';
-import 'package:flutter_auth/feature/domain/entities/user_entity.dart';
-import 'package:flutter_auth/feature/domain/repositories/user_repository.dart';
+import '../../../../core/common/responses/response.dart';
+import '../../entities/user_entity.dart';
+import '../../repositories/user_repository.dart';
 
 class UserSaveUseCase {
   final UserRepository repository;

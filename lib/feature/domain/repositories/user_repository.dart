@@ -1,5 +1,5 @@
-import 'package:flutter_auth/core/common/responses/response.dart';
-import 'package:flutter_auth/feature/domain/entities/user_entity.dart';
+import '../../../core/common/responses/response.dart';
+import '../entities/user_entity.dart';
 
 abstract class UserRepository {
   Future<Response> create(UserEntity entity);

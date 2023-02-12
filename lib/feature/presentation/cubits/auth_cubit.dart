@@ -1,10 +1,10 @@
-import 'package:flutter_auth/feature/domain/use_cases/auth/is_sign_in_use_case.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../core/common/responses/response.dart';
 import '../../../core/utils/states/cubit_state.dart';
 import '../../../core/utils/validators/validator.dart';
 import '../../domain/entities/user_entity.dart';
+import '../../domain/use_cases/auth/is_sign_in_use_case.dart';
 import '../../domain/use_cases/auth/sign_in_with_biometric_use_case.dart';
 import '../../domain/use_cases/auth/sign_in_with_email_n_password_use_case.dart';
 import '../../domain/use_cases/auth/sign_in_with_facebook_use_case.dart';

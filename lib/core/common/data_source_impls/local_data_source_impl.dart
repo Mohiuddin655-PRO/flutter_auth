@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:flutter_auth/core/utils/validators/validator.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../utils/validators/validator.dart';
 import '../data_sources/local_data_source.dart';
 import '../models/local_base_model.dart';
 import '../responses/response.dart';

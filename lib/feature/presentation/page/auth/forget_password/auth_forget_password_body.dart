@@ -1,15 +1,15 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_auth/core/constants/colors.dart';
-import 'package:flutter_auth/core/utils/validators/validator.dart';
-import 'package:flutter_auth/feature/domain/entities/user_entity.dart';
-import 'package:flutter_auth/feature/presentation/cubits/auth_cubit.dart';
-import 'package:flutter_auth/feature/presentation/widget/edit_text.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../core/common/responses/response.dart';
 import '../../../../../core/common/widgets/toast.dart';
+import '../../../../../core/constants/colors.dart';
+import '../../../../../core/utils/validators/validator.dart';
+import '../../../../domain/entities/user_entity.dart';
+import '../../../cubits/auth_cubit.dart';
 import '../../../widget/button.dart';
+import '../../../widget/edit_text.dart';
 import '../../home/home_page.dart';
 
 class AuthForgetPasswordBody extends StatefulWidget {

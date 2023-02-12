@@ -1,5 +1,6 @@
-import 'package:flutter_auth/core/constants/colors.dart';
 import 'package:flutter/material.dart';
+
+import '../../../core/constants/colors.dart';
 
 class CommonDivider extends StatelessWidget {
   final double? height, width, space;

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_auth/core/utils/states/cubit_state.dart';
-import 'package:flutter_auth/feature/presentation/cubits/auth_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../../core/utils/states/cubit_state.dart';
+import '../../../cubits/auth_cubit.dart';
 import '../../../widget/screen.dart';
 import '../../home/home_page.dart';
 import 'auth_sign_in_body.dart';

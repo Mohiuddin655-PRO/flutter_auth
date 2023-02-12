@@ -1,6 +1,5 @@
-import 'package:flutter_auth/core/common/responses/response.dart';
-
 import '../log_builders/log_builder.dart';
+import '../responses/response.dart';
 
 abstract class FirebaseDataSource {
   Future<Response> insert(String id, Map<String, dynamic> data);

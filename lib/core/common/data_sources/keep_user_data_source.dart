@@ -1,4 +1,3 @@
-import '../../../feature/domain/entities/user_entity.dart';
 import '../log_builders/log_builder.dart';
 import '../responses/response.dart';
 

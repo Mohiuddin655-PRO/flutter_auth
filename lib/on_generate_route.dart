@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_auth/feature/presentation/cubits/user_cubit.dart';
-import 'package:flutter_auth/feature/presentation/page/auth/forget_password/auth_forget_password_page.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'dependency_injection.dart';
 import 'feature/presentation/cubits/auth_cubit.dart';
+import 'feature/presentation/cubits/user_cubit.dart';
+import 'feature/presentation/page/auth/forget_password/auth_forget_password_page.dart';
 import 'feature/presentation/page/auth/sign_in/auth_sign_in_page.dart';
 import 'feature/presentation/page/auth/sign_up/auth_sign_up_page.dart';
 import 'feature/presentation/page/error/error_page.dart';

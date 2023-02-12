@@ -1,5 +1,4 @@
 import '../../../../core/common/responses/response.dart';
-import '../../entities/credential.dart';
 import '../../repositories/auth_repository.dart';
 
 class SignInWithBiometricUseCase {

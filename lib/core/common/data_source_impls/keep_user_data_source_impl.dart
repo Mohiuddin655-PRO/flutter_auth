@@ -17,7 +17,7 @@ class KeepUserDataSourceImpl extends LocalDataSource<UserEntity> {
     const response = Response();
     final json = jsonEncode(entity?.map ?? '');
     final success = await preferences.setString(key, json);
-    if (success){
+    if (success) {
       return response.copyWith(isSuccessful: success);
     } else {
       return response.copyWith(message: "User information didn't save!");

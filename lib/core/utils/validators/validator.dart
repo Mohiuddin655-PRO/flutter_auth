@@ -1,6 +1,6 @@
 import 'dart:core';
 
-import 'package:flutter_auth/core/utils/regex/regs.dart';
+import '../regex/regs.dart';
 
 class Validator {
   const Validator._();

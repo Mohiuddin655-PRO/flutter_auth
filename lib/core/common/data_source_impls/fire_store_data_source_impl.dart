@@ -26,7 +26,8 @@ class FireStoreDataSourceImpl extends FirebaseDataSource {
           return response.copyWith(result: data);
         } else {
           log.put("INSERT", value);
-          return response.copyWith(snapshot: value, message: 'Already inserted!');
+          return response.copyWith(
+              snapshot: value, message: 'Already inserted!');
         }
       });
     } else {
@@ -64,9 +65,9 @@ class FireStoreDataSourceImpl extends FirebaseDataSource {
     try {
       final result = await database.collection(path).doc(id).get();
       log.put("GET", result);
-      if (result.exists){
+      if (result.exists) {
         return response.copyWith(result: true);
-      } else{
+      } else {
         return response.copyWith(message: "Data not found!");
       }
     } on Exception catch (_) {
@@ -81,9 +82,9 @@ class FireStoreDataSourceImpl extends FirebaseDataSource {
     try {
       final result = await database.collection(path).get();
       log.put("GETS", result);
-      if (result.docs.isNotEmpty){
+      if (result.docs.isNotEmpty) {
         return response.copyWith(result: result);
-      } else{
+      } else {
         return response.copyWith(message: "Data not found!");
       }
     } on Exception catch (_) {
@@ -91,5 +92,4 @@ class FireStoreDataSourceImpl extends FirebaseDataSource {
       return response.copyWith(message: _.toString());
     }
   }
-
 }
