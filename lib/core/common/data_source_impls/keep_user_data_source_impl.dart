@@ -18,11 +18,10 @@ class KeepUserDataSourceImpl extends LocalDataSource<UserEntity> {
     final json = jsonEncode(entity?.map ?? '');
     final success = await preferences.setString(key, json);
     if (success){
-      response.copyWith(isSuccessful: success);
+      return response.copyWith(isSuccessful: success);
     } else {
-      response.copyWith(message: "User information didn't save!");
+      return response.copyWith(message: "User information didn't save!");
     }
-    return response;
   }
 
   @override
@@ -30,11 +29,10 @@ class KeepUserDataSourceImpl extends LocalDataSource<UserEntity> {
     const response = Response();
     final completed = await preferences.remove(key);
     if (completed) {
-      response.copyWith(result: true);
+      return response.copyWith(result: true);
     } else {
-      response.copyWith(message: "User information didn't clear!");
+      return response.copyWith(message: "User information didn't clear!");
     }
-    return response;
   }
 
   @override
@@ -44,10 +42,9 @@ class KeepUserDataSourceImpl extends LocalDataSource<UserEntity> {
     if (model != null) {
       final json = jsonDecode(model);
       final data = UserEntity.from(json);
-      response.copyWith(result: data);
+      return response.copyWith(result: data);
     } else {
-      response.copyWith(message: 'User is not valid!');
+      return response.copyWith(message: 'User is not valid!');
     }
-    return response;
   }
 }
