@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_auth/feature/presentation/page/auth/otp/page.dart';
+import 'package:flutter_auth/feature/presentation/page/auth/phone/page.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'dependency_injection.dart';
@@ -19,6 +21,10 @@ class OnGenerateRoute {
         return routeBuilder(widget: _signIn());
       case AuthSignUpPage.route:
         return routeBuilder(widget: _signUp());
+      case AuthPhonePage.route:
+        return routeBuilder(widget: _signInWithPhone());
+      case AuthOtpPage.route:
+        return routeBuilder(widget: _verifyOtp());
       case AuthForgetPasswordPage.route:
         return routeBuilder(widget: _forgetPassword());
       default:
@@ -46,6 +52,20 @@ Widget _signIn() {
   return BlocProvider(
     create: (context) => locator<AuthCubit>()..isLoggedIn,
     child: const AuthSignInPage(),
+  );
+}
+
+Widget _signInWithPhone() {
+  return BlocProvider(
+    create: (context) => locator<AuthCubit>()..isLoggedIn,
+    child: const AuthPhonePage(),
+  );
+}
+
+Widget _verifyOtp() {
+  return BlocProvider(
+    create: (context) => locator<AuthCubit>()..isLoggedIn,
+    child: const AuthOtpPage(),
   );
 }
 

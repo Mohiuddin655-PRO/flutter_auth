@@ -1,10 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_auth/feature/presentation/page/auth/phone/page.dart';
 
 import 'core/constants/app_info.dart';
 import 'core/constants/themes.dart';
 import 'dependency_injection.dart' as di;
-import 'feature/presentation/page/auth/sign_in/auth_sign_in_page.dart';
 import 'on_generate_route.dart';
 
 Future<void> main() async {
@@ -23,7 +23,7 @@ class Application extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.theme,
       title: AppInfo.name,
-      initialRoute: AuthSignInPage.route,
+      initialRoute: AuthPhonePage.route,
       onGenerateRoute: OnGenerateRoute.route,
     );
   }
